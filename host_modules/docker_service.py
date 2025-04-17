@@ -26,6 +26,8 @@ ALLOWED_CONTAINERS = {
     "syncd",
     "teamd",
     "telemetry",
+    # for testing purpose
+    "hello-world"
 }
 
 # The set of allowed images that can be managed by this service.
@@ -46,6 +48,8 @@ ALLOWED_IMAGES = {
     "docker-syncd-brcm",
     "docker-syncd-cisco",
     "docker-teamd",
+    # for testing purpose
+    "hello-world"
 }
 
 
