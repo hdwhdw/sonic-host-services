@@ -91,7 +91,7 @@ class FileService(host_service.HostModule):
                     return 0, ""
                 except Exception as e:
                     ssh.close()
-                    return 1, str(e)
+                    return EXIT_FAILURE, str(e)
 
             elif protocol in ["HTTP", "HTTPS"]:
                 response = requests.get(remote_path, auth=(username, password), stream=True)
